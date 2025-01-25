@@ -11,7 +11,7 @@ Este proyecto es una Pokédex interactiva desarrollada con **React Native** y **
 ## Cómo empezar 💻  
 1. Clona el repositorio:  
    ```bash  
-   git clone https://github.com/tu-usuario/pokedex.git  
+   git clone https://github.com/yerytech/PokedexApp.git
    ```  
 2. Instala las dependencias:  
    ```bash  
@@ -33,5 +33,3 @@ Este proyecto es una Pokédex interactiva desarrollada con **React Native** y **
 
 ¡Atrápalos a todos! 🎉
 
-# PokedexApp
-# PokedexApp
