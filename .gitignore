@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+.expo/
+.expo-shared/
+
+# macOS files
+.DS_Store
+
+# Temporary files and folders
+tmp/
+temp/
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Generated files
+build/
+dist/
+
+# Environment variables
+.env
+.env.*
+.env.local
+
+# Metro and React Native cache
+*.lock
+*.cache
+*.expo
