@@ -33,3 +33,4 @@ Este proyecto es una Pokédex interactiva desarrollada con **React Native** y **
 
 ¡Atrápalos a todos! 🎉
 
+# PokedexApp
