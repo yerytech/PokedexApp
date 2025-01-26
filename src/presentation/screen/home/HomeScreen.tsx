@@ -8,7 +8,7 @@ export const HomeScreen = () => {
   const { top } = useSafeAreaInsets();
   const { isLoading, data } = useQuery({
     queryKey: ["pokemons"],
-    queryFn: () => getPokemons(),
+    queryFn: () => getPokemons(5),
     staleTime: 1000 * 60 * 60,
   });
 
