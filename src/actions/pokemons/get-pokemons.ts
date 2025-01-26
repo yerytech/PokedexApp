@@ -1,5 +1,5 @@
 import { pokeApi } from "../../config/api/pokeApi";
-import { Pokemon } from "../../domain/pokemon";
+import { Pokemon } from "../../domain/entities/pokemon";
 
 
 
