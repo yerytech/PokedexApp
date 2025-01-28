@@ -8,13 +8,8 @@ export class PokemonMapper {
     return {
       id: data.id,
       name: data.name,
-      avatar: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
-      sprites: [
-        data.sprites.back_default,
-        data.sprites.front_default,
-        data.sprites.front_shiny,
-        data.sprites.back_shiny,
-      ],
+      avatar: avatar,
+      sprites: sprites,
       types: data.types.map((type) => type.type.name),
     };
   }
