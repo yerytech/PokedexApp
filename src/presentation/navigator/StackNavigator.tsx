@@ -4,21 +4,18 @@ import { HomeScreen, PokemonScreen, SearchScreen } from "../screen";
 const Stack = createStackNavigator();
 export const StackNavigator = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen
         name={"HomeScreen"}
         component={HomeScreen}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name={"PokemonScreen"}
         component={PokemonScreen}
-        options={{ headerShown: false }}
       />
       <Stack.Screen
         name={"SearchScreen"}
         component={SearchScreen}
-        options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );
