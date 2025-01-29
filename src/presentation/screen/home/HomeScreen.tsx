@@ -20,7 +20,8 @@ export const HomeScreen = () => {
       <PokeBallBg style={styles.imgposition} />
 
       <FlatList
-        style={{ marginTop: top + 20 }}
+        showsVerticalScrollIndicator={false}
+        style={{ paddingTop: top + 20 }}
         data={pokemons}
         keyExtractor={(pokemon, i) => `${pokemon.id}-${i}`}
         numColumns={2}
