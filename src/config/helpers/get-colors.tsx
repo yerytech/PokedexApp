@@ -1,13 +1,13 @@
-import { getColors } from "react-native-image-colors";
+import ImageColors from "react-native-image-colors";
 
 export const getColorsFromImage = async (image: string) => {
-  const fallbackColors = "#228B22";
+  const fallbackColors = "grey";
+  const images = "https://via.placeholder.com/300.png";
 
   try {
-    const colors = await getColors(image, {
+    const colors = await ImageColors.getColors(image, {
       fallback: fallbackColors,
       cache: true,
-      key: image,
     });
 
     switch (colors.platform) {
@@ -19,6 +19,8 @@ export const getColorsFromImage = async (image: string) => {
         return fallbackColors;
     }
   } catch (error) {
+    console.log(error);
+
     return fallbackColors;
   }
 };

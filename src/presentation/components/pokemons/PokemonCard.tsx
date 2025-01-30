@@ -9,7 +9,7 @@ interface Props {
 
 export const PokemonCard = ({ pokemon }: Props) => {
   return (
-    <Card style={[styles.cardContainer]}>
+    <Card style={[styles.cardContainer, { backgroundColor: pokemon.color }]}>
       <Text
         variant="bodyLarge"
         style={styles.name}
