@@ -1,6 +1,11 @@
 import { createStackNavigator } from "@react-navigation/stack";
-import { Text, View } from "react-native";
 import { HomeScreen, PokemonScreen, SearchScreen } from "../screen";
+export type RootStackParams = {
+  HomeScreen: undefined;
+  PokemonScreen: { pokemonId: number };
+  SearchScreen: undefined;
+};
+
 const Stack = createStackNavigator();
 export const StackNavigator = () => {
   return (
