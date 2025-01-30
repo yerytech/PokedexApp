@@ -16,7 +16,7 @@ export const PokemonCard = ({ pokemon }: Props) => {
       onPress={() =>
         navigation.navigate("PokemonScreen", { pokemonId: pokemon.id })
       }
-      style={[styles.cardContainer]}
+      style={{ flex: 1 }}
     >
       <Card style={[styles.cardContainer, { backgroundColor: pokemon.color }]}>
         <Text
