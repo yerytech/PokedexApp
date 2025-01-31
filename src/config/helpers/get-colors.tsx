@@ -19,8 +19,8 @@ export const getColorsFromImage = async (image: string) => {
         return fallbackColors;
     }
   } catch (error) {
-    console.log(error);
-
+    throw new Error(`Problemas al obtener el color ${error}`);
+    
     return fallbackColors;
   }
 };
