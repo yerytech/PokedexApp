@@ -10,10 +10,12 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParams } from "../../navigator/StackNavigator";
+import { getColorsImageApi } from "../../../config/helpers/getColorsImageApi";
 
 interface Props extends StackScreenProps<RootStackParams, "HomeScreen"> {}
 
 export const HomeScreen = ({ navigation }: Props) => {
+  getColorsImageApi();
   const { top } = useSafeAreaInsets();
   const queryClient = useQueryClient();
   const { isDark } = useContext(ThemeContext);
@@ -27,10 +29,10 @@ export const HomeScreen = ({ navigation }: Props) => {
 
   // !peticion con cache y infinitScroll
   const { isLoading, data, fetchNextPage } = useInfiniteQuery({
-    queryKey: ["pokemons", "infinite"],
+    queryKey: ["pokemon", "infinity"],
     initialPageParam: 0,
 
-    staleTime: 1000 * 60 * 60,
+    staleTime: 1000 * 60 * 5,
     queryFn: async (params) => {
       const pokemons = await getPokemons(params.pageParam);
       pokemons.forEach((pokemon) => {
