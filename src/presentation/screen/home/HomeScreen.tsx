@@ -10,12 +10,11 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParams } from "../../navigator/StackNavigator";
-import { getColorsImageApi } from "../../../config/helpers/getColorsImageApi";
+
 
 interface Props extends StackScreenProps<RootStackParams, "HomeScreen"> {}
 
 export const HomeScreen = ({ navigation }: Props) => {
-  getColorsImageApi();
   const { top } = useSafeAreaInsets();
   const queryClient = useQueryClient();
   const { isDark } = useContext(ThemeContext);
