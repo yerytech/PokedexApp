@@ -64,7 +64,12 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   name: {
-    color: "white",
+    fontWeight: "bold",
+    color: "#fff",
+
+    textShadowColor: "#000",
+    textShadowRadius: 15,
+    textShadowOffset: { width: 2, height: 2 },
     top: 10,
     left: 10,
   },
