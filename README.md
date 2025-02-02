@@ -21,11 +21,12 @@ Aquí tienes algunas capturas de pantalla de la aplicación en acción:
 *Estadísticas y habilidades de un Pokémon*
 
 ## Cómo empezar 💻  
-1. Clona el repositorio:  
-   ```bash  
+   Clona el repositorio:  
+ ```bash
    git clone https://github.com/yerytech/PokedexApp.git  
 
-    Instala las dependencias:
+
+ Instala las dependencias:
 
 npm install  
 
@@ -34,10 +35,10 @@ Instala el cliente de desarrollo de Expo:
 npx expo install expo-dev-client  
 
 Ejecuta el proyecto en el entorno Bare Workflow:
+Para Android:
+       npx expo run:android 
 
-    Para Android:
-
-npx expo run:android  
+ 
 
 Para iOS:
 
@@ -45,9 +46,9 @@ Para iOS:
 
 Requisitos 🛠️
 
-    Node.js y npm instalados.
-    Android Studio y/o Xcode (para emuladores o dispositivos físicos).
-    Tener configurado el entorno Bare Workflow de React Native.
-    Expo Dev Client instalado en tu dispositivo móvil o emulador.
+   Node.js y npm instalados.
+   Android Studio y/o Xcode (para emuladores o dispositivos físicos).
+   Tener configurado el entorno Bare Workflow de React Native.
+   Expo Dev Client instalado en tu dispositivo móvil o emulador.
 
 ¡Atrápalos a todos! 🎉
