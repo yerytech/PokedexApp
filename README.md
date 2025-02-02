@@ -23,26 +23,31 @@ Aquí tienes algunas capturas de pantalla de la aplicación en acción:
 ## Cómo empezar 💻  
    Clona el repositorio:  
  ```bash
-   git clone https://github.com/yerytech/PokedexApp.git  
+   git clone https://github.com/yerytech/PokedexApp.git 
+   ```
 
 
  Instala las dependencias:
-
-npm install  
+```bash
+npm install 
+```
 
 Instala el cliente de desarrollo de Expo:
-
-npx expo install expo-dev-client  
+```bash
+npx expo install expo-dev-client 
+``` 
 
 Ejecuta el proyecto en el entorno Bare Workflow:
-Para Android:
-       npx expo run:android 
 
- 
+Para Android:
+```bash
+ npx expo run:android 
+```
 
 Para iOS:
-
-        npx expo run:ios  
+```bash
+npx expo run:ios 
+``` 
 
 Requisitos 🛠️
 
